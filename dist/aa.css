@@ -1,0 +1,13 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+.ag{
+  display: flex;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #ddd;
+  color: #f0f;
+  transform:scale(1,1)
+
+}

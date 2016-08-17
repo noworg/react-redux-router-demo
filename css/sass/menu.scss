@@ -1,0 +1,83 @@
+
+.nav > li, .nav > li > a {
+  display: flex;
+  .active {
+    background: #f0ad4e;
+    color: #fff !important;
+    &:hover, &:focus {
+      background: #f0ad4e !important;
+      color: #fff !important;
+    }
+
+  }
+
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.homeContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 52px;
+  bottom: 0;
+  width: 320px;
+  padding: 0;
+  background: #dcc;
+  transition: all 0.4s ease;
+  .top {
+    flex-shrink: 1;
+    height: 48px;
+    text-align: right;
+    background-color: #30404f;
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .midd {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+  .bottom {
+    flex-shrink: 1;
+    height: 48px;
+    background-color: #30404f;
+  }
+}
+
+.tableContainer {
+  padding: 8px 16px;
+  //@extend .homeContainer;
+}
+
+.total-table {
+  border-top: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+body {
+  background: #fff;
+}
+
+.hideLeft {
+  margin-left: -320px;
+}
+
+.funBar {
+  width: 64px;
+  height: 64px;
+  background: #ddd;
+  border-bottom-right-radius: 100%;
+}
+
+.leftShow {
+  margin-left: 12px;
+  line-height: 58px;
+  font-size: 24px;
+}
