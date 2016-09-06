@@ -32,7 +32,6 @@ var config = {
             },
             {
                 test: /\.css$/,
-                //loader: 'style!css',
                 loader: ExtractTextPlugin.extract("style", "css!postcss")
             },
             {
@@ -40,12 +39,8 @@ var config = {
                 loader: ExtractTextPlugin.extract("style", "css!postcss!sass")
             },
             {
-                test: /\.(png|jpg)$/,
-                loader: 'url-loader?limit=8192',
-            },
-            {
-                test: /\.svg$/,
-                loader: 'url-loader?limit=8192',
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+                loader: 'url-loader?limit=8192'
             }
         ]
     },
