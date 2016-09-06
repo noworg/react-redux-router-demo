@@ -34,7 +34,7 @@ var config = {
             {
                 test: /\.css$/,
                 //loader: 'style!css',
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader")
+                loader: ExtractTextPlugin.extract("style", "css!postcss")
             },
             {
                 test: /\.scss$/,
