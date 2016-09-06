@@ -11,7 +11,6 @@ var config = {
     entry: {
         all: './js/Menu/Menu.jsx',
         react: ['react', 'redux', 'react-dom', 'react-redux', 'redux-thunk', 'react-router', 'react-router-redux'],
-        //react: ['react-dom',]
     },
 
     output: {
@@ -20,7 +19,7 @@ var config = {
     },
 
     resolve: {
-        extensions: ['', '.js', '.jsx', 'scss']
+        extensions: ['', '.js', '.jsx', '.scss']
     },
 
     module: {
@@ -49,18 +48,14 @@ var config = {
                 loader: 'url-loader?limit=8192',
             }
         ]
-    }
-    ,
-    //postcss: [autoprefixer({
-    //    browsers: ['ie >= 8', 'opera 12.1','ios 6','android 4']
-    //})],
+    },
     postcss: [precss, autoprefixer({
         browsers: ['ie >= 8', 'opera 12.1', 'ios 6', 'android 4']
     })],
     plugins: [
         //分隔文件
         new webpack.optimize.CommonsChunkPlugin('react', 'react.js'),
-        new ExtractTextPlugin('s.css'),
+        new ExtractTextPlugin('bundle.css'),
         //压缩 提前common文件
         //new webpack.optimize.UglifyJsPlugin({
         //    compress: {
