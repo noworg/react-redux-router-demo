@@ -40,7 +40,7 @@ var config = {
                 loader: ExtractTextPlugin.extract("style", "css!postcss!sass")
             },
             {
-                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|json)$/,
                 loader: 'url-loader?limit=8192'
             }
         ]
