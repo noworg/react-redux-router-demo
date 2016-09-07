@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import classNames from 'classnames';
 import {toggleLeft} from '../action/action.jsx';
 import {connect} from 'react-redux';
-export default class Home extends Component {
+class Home extends Component {
     bindClick(status) {
         const {dispatch} = this.props
         dispatch(toggleLeft(status))
