@@ -5,15 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --progress --colors",
-    "server": "gulp csscon & node server.js",
-    "des2": "使用gulp打包css配合webpack打包js webpack热部署",
-    "watch": "gulp work",
-    "des": "使用gulp打包css配合webpack打包js 使用gulp",
-    "all": "gulp csscon & webpack --config webpack.config.js --progress --profile --colors --d --watch",
-    "des1": "使用gulp打包css配合webpack打包js,最终替换掉gulp",
-    "build": "gulp csscon & webpack --config webpack.pro.config.js --progress --profile --colors -d",
-    "des-build": "使用gulp打包css配合webpack打包js,最终替换掉gulp,-d启用sourcemaps"
+    "start": "webpack --config webpack.config.js --progress --profile --colors --d --watch"
   },
   "keywords": [],
   "author": "",
@@ -50,6 +42,7 @@
     "lodash": "^4.14.1",
     "lodash.assign": "^4.1.0",
     "loose-envify": "^1.2.0",
+    "node-sass": "^3.9.3",
     "path": "^0.12.7",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
