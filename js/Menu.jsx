@@ -8,12 +8,10 @@ import { Router, Route, Link, Redirect, hashHistory,IndexRoute } from 'react-rou
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 import Home from './component/home.jsx';
 
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../../css/sass/ie.scss';
-import '../../css/sass/menu.scss';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../css/sass/ie.scss';
+import '../css/sass/menu.scss';
 //import '../../css/stylesheets/ie.css';
-//var $ = window.$ = window.jQuery = require('jquery'),
-//    bootstrap = require('bootstrap')
 
 //const middleware = routerMiddleware(hashHistory)
 const store = configStore();
