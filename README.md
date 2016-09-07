@@ -7,11 +7,12 @@ clone代码 && 进入项目目录
 下载依赖
 > npm i
 
-运行（watch）
-> npm run all
+运行
+> npm start
 
 热部署
 > npm run server
 
-生产模式（待完善）
-> npm run build
+.babelrc ....babel转换插件所需文件,这里用于转换es6与react代码
+
+
