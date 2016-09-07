@@ -19,11 +19,29 @@
 
 ###webpack
 demo使用webpack作为打包工具,完整配置在wepack.config.js中        
+
 WEBPACK参数解析:        
+        
+
 1.devtool由于配置sourceMap模式        
 soureceMap是用于定位压缩合并后js代码位置的文件,devtool包含8个参数        
 默认参数cheap-module-eval-source-map,这也是官方推荐的配置        
+```js
+config.devtool = 'cheap-module-eval-source-map'
+```        
 2.entry入口文件        
+这里可以配置项目的入口文件,        
+```js
+config.entry.app = 'app.js'
+```
+还可以将包拆分出来      
+```js
+config.entry.lib = ['react', 'redux', 'react-dom', 'react-redux', 'redux-thunk', 'react-router', 'react-router-redux']
+```
+3.output
+
+
+
 
 
 .babelrc ....babel转换插件所需文件,这里用于转换es6与react代码        
