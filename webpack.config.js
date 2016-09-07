@@ -49,7 +49,7 @@ var config = {
     })],
     plugins: [
         //分隔文件
-        new webpack.optimize.CommonsChunkPlugin('react', 'react.js'),
+        new webpack.optimize.CommonsChunkPlugin('lib', 'react.js'),
         new ExtractTextPlugin('bundle.css'),
         //压缩 提前common文件
         //new webpack.optimize.UglifyJsPlugin({
