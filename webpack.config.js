@@ -9,7 +9,7 @@ var autoprefixer = require('autoprefixer');
 var config = {
     devtool: 'cheap-module-eval-source-map',
     entry: {
-        all: './js/Menu/Menu.jsx',
+        all: './js/Menu.jsx',
         react: ['react', 'redux', 'react-dom', 'react-redux', 'redux-thunk', 'react-router', 'react-router-redux'],
     },
 
