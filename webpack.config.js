@@ -2,6 +2,7 @@ var path = require("path");
 var webpack = require('webpack');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var htmlWebpackPlugin = require("html-webpack-plugin");
 // process.env.NODE_ENV  product or dev
 // css autoprefix
 var precss = require('precss');
@@ -51,6 +52,20 @@ var config = {
         //分隔文件
         new webpack.optimize.CommonsChunkPlugin('lib', 'react.js'),
         new ExtractTextPlugin('bundle.css'),
+        new htmlWebpackPlugin({
+            filename: 'index.html',
+            chunks: ['app', 'lib'],
+            template:  './app.html',
+            //minify: {
+            //    collapseWhitespace: true,
+            //    collapseInlineTagWhitespace: true,
+            //    removeRedundantAttributes: true,
+            //    removeEmptyAttributes: true,
+            //    removeScriptTypeAttributes: true,
+            //    removeStyleLinkTypeAttributes: true,
+            //    removeComments: true
+            //}
+        })
         //压缩 提前common文件
         //new webpack.optimize.UglifyJsPlugin({
         //    compress: {

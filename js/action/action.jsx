@@ -34,7 +34,7 @@ export function toggleLeft(status){
 //table
 
 function loadData() {
-    const request = new Request("./js/App/aa.json", {
+    const request = new Request("../js/aa.json", {
         method: "GET",
         mode: "no-cors"
     });
