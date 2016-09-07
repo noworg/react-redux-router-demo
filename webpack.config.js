@@ -53,7 +53,7 @@ var config = {
         new webpack.optimize.CommonsChunkPlugin('lib', 'react.js'),
         new ExtractTextPlugin('bundle.css'),
         new htmlWebpackPlugin({
-            filename: 'index.html',
+            filename: path.resolve(__dirname, 'index.html'),
             chunks: ['app', 'lib'],
             template:  './app.html',
             //minify: {
