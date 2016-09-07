@@ -2,6 +2,9 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.se.config');
+
+var path = require("path");
+var node_modules_dir = path.resolve(__dirname, 'node_modules');
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot: true,
@@ -11,5 +14,5 @@ new WebpackDevServer(webpack(config), {
     if (err) {
         console.log(err);
     }
-    console.log('Listening at localhost:3000');
+    console.log(node_modules_dir);
 });
